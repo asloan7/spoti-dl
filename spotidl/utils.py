@@ -7,7 +7,7 @@ import logging
 from spotidl.config import RESET_COLOR_CODE
 
 
-default_save_dir = os.getcwd() + "/dl"
+default_save_dir = os.path.join(os.getcwd(), "dl")
 
 
 def initialize_logger(log_file: str, msg_format: str, datetime_format: str, log_level: int):
